@@ -3,12 +3,19 @@ $(document).ready(function(){
 	var slideWidth = 670;
 	var slides = $('.slide');
 	var numberOfSlides = slides.length;
-	var colors = [ 	
+	var background = [ 	
 					"#fc410d",
 					"#fcb61a",
 					"#61bda4",
 					"#20c5ff",
 					"#b897c4"
+				];
+	var text = [ 	
+					"#fce935",
+					"#00e31a",
+					"#4775ff",
+					"#d561ff",
+					"#ff2e5f"
 				];
 	  
   // Remove scrollbar in JS
@@ -31,34 +38,38 @@ $(document).ready(function(){
     .prepend('<div class="control" id="leftControl">Clicking moves left</div>')
     .append('<div class="control" id="rightControl">Clicking moves right</div>');
 
-  // Hide left arrow control on first load
-  manageControls(currentPosition);
+  isRepeat(currentPosition);
 
   // Create event listeners for .controls clicks
   $('.control')
     .bind('click', function(){
     // Determine new position
 	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
-	$("body").css("background-color", colors[currentPosition]);
-	// Hide / show controls
-    manageControls(currentPosition);
+	$("body").css("background-color", background[currentPosition]);
+	$("html").css("background-color", background[currentPosition]);
+	$("#mind").css("background-color", text[currentPosition]);
+    isRepeat(currentPosition);
     // Move slideInner using margin-left
     $('#slideInner').css({
       'marginLeft' : slideWidth*(-currentPosition)
     });
   });
 
-  // manageControls: Hides and Shows controls depending on currentPosition
-  function manageControls(position){
+
+  function isRepeat(position){
     // Hide left arrow if position is first slide
 	if(position==-1){ 
 		currentPosition=numberOfSlides-1;
-		$("body").css("background-color", colors[currentPosition]);
+		$("body").css("background-color", background[currentPosition]);
+		$("html").css("background-color", background[currentPosition]);
+		$("#mind").css("background-color", text[currentPosition])
 	}
 	else if(position==numberOfSlides)
 			{
 			currentPosition=0;
-			$("body").css("background-color", colors[currentPosition])
+			$("body").css("background-color", background[currentPosition]);
+			$("html").css("background-color", background[currentPosition]);
+			$("#mind").css("background-color", text[currentPosition])
 			}
   }	
 });
