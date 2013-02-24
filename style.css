@@ -1,0 +1,110 @@
+html,body {
+    height:100%;
+    margin:0;
+    padding:0;
+	background: #ffd321;
+}
+
+a {
+	color:#1f5949;
+}
+
+h1, h2, h4, h5, h6 {
+	font-weight:normal;
+	line-height:1;
+	margin:4px 0 12px;
+	color:#02346e;
+	}
+	
+h3{
+	font-weight:normal;
+	line-height:1;
+	margin:4px 0 12px;
+	color:#1f5949
+	}
+
+p {
+	text-align:justify;
+	word-spacing:.1ex;
+	line-height:1.6;
+	margin-bottom:1em
+	}
+	
+ul {
+	list-style:none;
+	-webkit-padding-start:0px;
+	}
+header, nav, section, article, aside, footer {display:block;position:relative; background: #FFF;}
+/*	
+.image {
+	margin: auto auto;
+	width: 1000px;
+	height: 566px;
+	overflow:hidden;
+	
+	}	*/
+
+	
+.wrapper {
+	display:table-cell;
+	vertical-align:middle;
+
+}	
+	
+.center {
+display:block; 
+margin:0 auto;
+}
+
+.finn{
+display: block;
+margin: -250px auto	0 auto;
+}
+
+/* nav
+nav {
+  position: relative;
+  margin: 20px 0;
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0 5px 10px 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+nav a {
+  padding: 3px 12px;
+  text-decoration: none;
+  color: #999;
+  line-height: 100%;
+}
+nav a:hover {
+  background: #999;
+  color: #fff;
+  border-radius: 5px;
+}
+ */
+
+/* нижняя часть - footer
+footer {
+	text-align:center;
+	height:40px;
+	padding-top: 20px;
+	color:#02346e;
+	border-top:1px solid #BBB;
+	}
+
+section {
+	overflow:hidden;
+	border: 1px solid #000;
+	}
+
+header {
+	border: 1px solid #000;
+	background:#FFF;
+} */
