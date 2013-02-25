@@ -1,27 +1,15 @@
 @font-face { 
  	font-family:'TETRA';
-	src: url(TETRA.eot);
+	src: url('TETRA.eot?') format('eot'), 
+         url('TETRA.ttf') format('truetype');
    	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face { 
  	font-family:'Casper';
-	src: url(Casper.eot);
-   	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face { 
- 	font-family:'TETRA';
-	src: url(TETRA.otf);
-   	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face { 
- 	font-family:'Casper';
-	src: url(Casper.ttf);
+	src: url('Casper.eot?') format('eot'), 
+		url('Casper.ttf') format('truetype');
    	font-weight: normal;
 	font-style: normal;
 }
