@@ -1,7 +1,7 @@
 @font-face { 
  	font-family:'TETRA';
 	src: url('TETRA.eot?') format('eot'), 
-         url('TETRA.ttf') format('truetype');
+         url('TETRA.otf') format('otf');
    	font-weight: normal;
 	font-style: normal;
 }
