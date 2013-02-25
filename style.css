@@ -1,5 +1,19 @@
 @font-face { 
  	font-family:'TETRA';
+	src: url(TETRA.eot);
+   	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { 
+ 	font-family:'Casper';
+	src: url(Casper.eot);
+   	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { 
+ 	font-family:'TETRA';
 	src: url(TETRA.otf);
    	font-weight: normal;
 	font-style: normal;
@@ -14,7 +28,7 @@
 
 
 html,body {
-    height:100%;
+   min-width:500px; height:100%;
     margin:0;
     padding:0;
 	background: #fc460d;
