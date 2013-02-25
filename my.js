@@ -4,18 +4,18 @@ $(document).ready(function(){
 	var slides = $('.slide');
 	var numberOfSlides = slides.length;
 	var background = [ 	
-					"#fc410d",
+					"#fc460d",
 					"#fcb61a",
 					"#61bda4",
 					"#20c5ff",
 					"#b897c4"
 				];
 	var text = [ 	
-					"#fce935",
-					"#00e31a",
-					"#4775ff",
-					"#d561ff",
-					"#ff2e5f"
+					"rgba(252,233,53,0.8)",
+					"rgba(0,227,26,0.8)",
+					"rgba(71,114,255,0.8)",
+					"rgba(213,97,255,0.8)",
+					"rgba(255,46,95,0.8)"
 				];
 	  
   // Remove scrollbar in JS
@@ -64,8 +64,7 @@ $(document).ready(function(){
 		$("html").css("background-color", background[currentPosition]);
 		$("#mind").css("background-color", text[currentPosition])
 	}
-	else if(position==numberOfSlides)
-			{
+	else if(position==numberOfSlides){
 			currentPosition=0;
 			$("body").css("background-color", background[currentPosition]);
 			$("html").css("background-color", background[currentPosition]);

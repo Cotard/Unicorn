@@ -1,44 +1,63 @@
+@font-face { 
+ 	font-family:'TETRA';
+	src: url(TETRA.otf);
+   	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face { 
+ 	font-family:'Casper';
+	src: url(Casper.ttf);
+   	font-weight: normal;
+	font-style: normal;
+}
+
+
 html,body {
-    height:100%;
+   min-width:500px; height:100%;
     margin:0;
     padding:0;
-	background: #fc410d;
+	background: #fc460d;
 	min-width:730px;
 	min-height:650px;
 }
-
-div {
-	-moz-user-select: -moz-none;
-	-o-user-select: none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
+ 
+.header{
+	margin: 0 auto;
+	font-size: 45pt;
+ 	font-family:'TETRA';
 }
 
-.wrapper {
-	display:table-cell;
-	vertical-align:middle;
+a {
+	font-family:'TETRA';
+	text-decoration:none;
+	color: #FFF;
+}
 
-}	
-	
+p{
+	margin:10px;
+	padding:0;
+}
+
 .center {
-display:block; 
-margin:0 auto;
+	display:block; 
+	margin:0 auto;
 }
 
 .finn{
-display: block;
-margin: -250px auto	0 auto;
+	display: block;
+	margin: -250px auto	0 auto;
 }
 
 #mind{
+	top:50px;
+	left:17%;
 	padding: 10px 20px 5px 16px;
 	width:65%;
-	background: rgba(33,203,255,1);
+	background: rgba(252,233,53,0.8);
 	position:absolute;
-	top:0;
-	left:0;
-	margin:100px 15% 0 15%;
+	font-family:'Casper';
+	
 	border: 1px solid #fff0ce;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -49,32 +68,34 @@ margin: -250px auto	0 auto;
 }
 
 #slideshow, #slidesContainer {
-  margin:0 auto;
-  width:670px;
-  overflow:auto; /* allow scrollbar */
-  position:relative;
+	margin:0 auto;
+	width:670px;
+	overflow:auto; /* allow scrollbar */
+
 }
 #slideshow, #slidesContainer .slide {
-  margin:0 auto;
-  width:100%;
+	width:100%;
 }
 
 .control {
-  width:32px;
-  height:50px;
-  margin-top: 40%;
-  text-indent:-10000px;
-  position:absolute;
-  cursor: pointer;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none; width:32px;
+	height:50px;
+	top: 44%;
+	text-indent:-10000px;
+	position:absolute;
+	cursor: pointer;
 }
 #leftControl {
-  top:0;
+
   left:0;
   background:transparent url(left.png) no-repeat 0 0;
 }
 #rightControl {
-  top:0;
-  right:0;
+   right:0;
   background:transparent url(right.png) no-repeat 0 0;
 }
 
