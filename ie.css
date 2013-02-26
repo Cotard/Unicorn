@@ -12,6 +12,5 @@
 	font-family:'Casper';
 	position:absolute;
 	border: 1px solid #fff0ce;
-	border-radius: 10px;
-	behavior: url(PIE.htc); /* учим IE border-radius */
+	border-radius: 4px;
 }
