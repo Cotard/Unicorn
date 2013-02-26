@@ -2,7 +2,7 @@
  	font-family:'TETRA';
 	src: url('TETRA.eot'); /* IE9 Compat Modes */
 	src: url('TETRA.eot?#iefix') format('embedded-opentype'), 
-         url('tetra.otf') format('opentype');
+         url('TETRA.otf') format('opentype');
    	font-weight: normal;
 	font-style: normal;
 }
