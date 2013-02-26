@@ -13,5 +13,5 @@
 	position:absolute;
 	border: 1px solid #fff0ce;
 	border-radius: 4px;
-	behavior: url(ie-css3.htc); /* учим IE border-radius */
+	behavior: url(PIE.htc); /* учим IE border-radius */
 }
