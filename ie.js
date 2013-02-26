@@ -11,11 +11,11 @@ $(document).ready(function(){
 					"#b897c4"
 				];
 	var text = [ 	
-					"rgba(252,233,53,0.8)",
-					"rgba(0,227,26,0.8)",
-					"rgba(71,114,255,0.8)",
-					"rgba(213,97,255,0.8)",
-					"rgba(255,46,95,0.8)"
+					"fce935",
+					"00e31a",
+					"4775ff",
+					"d561ff",
+					"ff2e5f"
 				];
 	  
   // Remove scrollbar in JS
@@ -47,7 +47,10 @@ $(document).ready(function(){
 	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
 	$("body").css("background-color", background[currentPosition]);
 	$("html").css("background-color", background[currentPosition]);
-	$(".mind").css("background-color", text[currentPosition]);
+	$(".mind").css("filter", 
+	"progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8" + text[currentPosition] +
+	",endColorstr=#C8" + text[currentPosition]);
+	
     isRepeat(currentPosition);
     // Move slideInner using margin-left
     $('#slideInner').css({
@@ -62,13 +65,17 @@ $(document).ready(function(){
 		currentPosition=numberOfSlides-1;
 		$("body").css("background-color", background[currentPosition]);
 		$("html").css("background-color", background[currentPosition]);
-		$(".mind").css("background-color", text[currentPosition])
+		$(".mind").css("filter", 
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8" + text[currentPosition] +
+		",endColorstr=#C8" + text[currentPosition])
 	}
 	else if(position==numberOfSlides){
 			currentPosition=0;
 			$("body").css("background-color", background[currentPosition]);
 			$("html").css("background-color", background[currentPosition]);
-			$(".mind").css("background-color", text[currentPosition])
+			$(".mind").css("filter", 
+			"progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8" + text[currentPosition] +
+			",endColorstr=#C8" + text[currentPosition])
 			}
   }	
 });

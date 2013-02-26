@@ -1,0 +1,16 @@
+.mind{
+	top:50px;
+	left:17%;
+	padding: 10px 20px 5px 16px;
+	width:65%;
+	
+	/*землю Ч кресть€нам, фабрики Ч рабочим, а ослам Ч костыль!*/		
+	background:transparent;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#C8fce935,endColorstr=#C8fce935);
+	zoom: 1;	
+	
+	font-family:'Casper';
+	position:absolute;
+	border: 1px solid #fff0ce;
+	border-radius: 4px;
+}
