@@ -3,6 +3,10 @@
 	left:17%;
 	padding: 10px 20px 5px 16px;
 	width:65%;
+	border-radius: 10px;
+	-moz-border-radius: 15px; /* Firefox */
+	-webkit-border-radius: 15px; /* Safari and Chrome */
+	behavior: url(border-radius.htc); /* учим IE border-radius */
 	
 	/*землю Ч кресть€нам, фабрики Ч рабочим, а ослам Ч костыль!*/		
 	background:transparent;
