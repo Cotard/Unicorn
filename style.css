@@ -1,7 +1,8 @@
 @font-face { 
  	font-family:'TETRA';
-	src: url('TETRA.eot?') format('eot'), 
-         url('TETRA.otf') format('opentype');
+	src: url('TETRA.eot'); /* IE9 Compat Modes */
+	src: url('TETRA.eot?#iefix') format('embedded-opentype'), 
+         url('tetra.otf') format('opentype');
    	font-weight: normal;
 	font-style: normal;
 }
